@@ -1,0 +1,7 @@
+site_name: SAFE Fleming Bible
+
+theme:
+  name: 'material'
+  palette:
+    primary: 'deep orange'
+    accent: 'indigo'
