@@ -268,8 +268,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#multiple-group-authorities" title="Multiple (Group) authorities:" class="md-nav__link">
-    Multiple (Group) authorities:
+  <a href="#multiple-group-authorities" title="Multiple (Group) authorities" class="md-nav__link">
+    Multiple (Group) authorities
   </a>
   
     <nav class="md-nav">
@@ -461,8 +461,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#multiple-group-authorities" title="Multiple (Group) authorities:" class="md-nav__link">
-    Multiple (Group) authorities:
+  <a href="#multiple-group-authorities" title="Multiple (Group) authorities" class="md-nav__link">
+    Multiple (Group) authorities
   </a>
   
     <nav class="md-nav">
@@ -568,7 +568,7 @@
 Can be the source or final destination of the message and it’s address is the given node address.
 - #### Client
 Can be the source or final destination of the message. A client authority is a client connecting to the network via a proxy node. The message must specify the proxy node address and the public ID of the client.</p>
-<h3 id="multiple-group-authorities">Multiple (Group) authorities:</h3>
+<h3 id="multiple-group-authorities">Multiple (Group) authorities</h3>
 <p>In order to relay the message it must be verified by a quorum of nodes in either the section or group.</p>
 <ul>
 <li>
@@ -585,12 +585,12 @@ Require quorum agreement from the group of nodes closest to the source.</li>
 <h4 id="examples">Examples</h4>
 <p>The following are some examples of message relay from and to different authorities.</p>
 <h5 id="section-authority-sa-to-a-managed-node-mn">Section Authority (SA) to a Managed Node (MN)</h5>
-<p>The node within the section address closest to the hash of the destination, acts as the accumulation node (indicated in orange below)  and, if it gets verification from a quorum of the section nodes, sends the message to the destination (indicated in red below) via section relay…
-<img alt="SA-to-MN" src="../images/image11.png" /></p>
+<p>The node within the section closest to the address of the destination, acts as the accumulation node (indicated in orange below) and, if the node gets verification from a quorum of the section nodes it then sends the message to the destination (indicated in red below) via section relay…
+<img alt="SA-to-MN" src="../images/0301.png" /></p>
 <h5 id="managednode-to-prefixsection">ManagedNode to PrefixSection</h5>
 <p>A single ManagedNode (MN) sends a message to a PrefixSection (PSA).</p>
 <p>The ManagedNode (indicated in orange below) sends the message to the destination prefix (as a Single Authority it does not require quorum agreement prior to sending).  Once the prefix section receives the message it delivers the message to all nodes within the prefix.
-<img alt="MN-to-PSA" src="../images/image15.png" /></p>
+<img alt="MN-to-PSA" src="../images/0302.png" /></p>
 <h2 id="features">Features</h2>
 <ul>
 <li>Group authorities</li>
