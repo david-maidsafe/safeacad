@@ -21,7 +21,7 @@ Can be the source or final destination of the message and it’s address is the 
 Can be the source or final destination of the message. A client authority is a client connecting to the network via a proxy node. The message must specify the proxy node address and the public ID of the client.
 
 
-### Multiple (Group) authorities:
+### Multiple (Group) authorities
 In order to relay the message it must be verified by a quorum of nodes in either the section or group.
 
 - #### Section:
@@ -35,15 +35,14 @@ Require quorum agreement from the group of nodes closest to the source.
 The following are some examples of message relay from and to different authorities.
 ##### Section Authority (SA) to a Managed Node (MN)
 
-The node within the section address closest to the hash of the destination, acts as the accumulation node (indicated in orange below)  and, if it gets verification from a quorum of the section nodes, sends the message to the destination (indicated in red below) via section relay…
-![SA-to-MN](./images/image11.png)
-
+The node within the section closest to the address of the destination, acts as the accumulation node (indicated in orange below) and, if the node gets verification from a quorum of the section nodes it then sends the message to the destination (indicated in red below) via section relay…
+![SA-to-MN](./images/0301.png)
 
 ##### ManagedNode to PrefixSection
 A single ManagedNode (MN) sends a message to a PrefixSection (PSA).
 
 The ManagedNode (indicated in orange below) sends the message to the destination prefix (as a Single Authority it does not require quorum agreement prior to sending).  Once the prefix section receives the message it delivers the message to all nodes within the prefix.
-![MN-to-PSA](./images/image15.png)
+![MN-to-PSA](./images/0302.png)
 
 ## Features
 - Group authorities

@@ -33,18 +33,23 @@ The closer a node is to an address space, the more info it has about the address
 
 Security increases as Network grows and this is because each node becomes responsible for a tighter group of addresses.  
 
-| ![sections](./images/image7.png) | ![groups](./images/image14.png) |
+|  |  |
+| :--: | :--- |
+|![question](./images/question.png)| **Nadia Burborough:** 'Security increases as...'<br>this (for me anyway) doesn't answer the reason why security is increased. What is the impact tighter groups have on security?<br><br>**MaidBot:** beep boop beep |
+
+
+| ![sections](./images/0401_sections.png) | ![groups](./images/0402_groups.png) |
 | :--: | :--: |
 | Sections | Groups |
 
 
 ## How it works
 
-A new node joins the Network (via Bootstrap process)
-Contacts a (dumb) proxy
-Proxy sends new node to a Section
-New node has to then generate keypair that falls within range of Section addresses
-So if sent to Section 11010…, node’s address must also start with 11010...
-Unlike Bitcoin where any random address is created
-The public signing key it has created now acts as that node’s new location on the Network
-New Section now checks new node is suitable (Resource Proof)
+- A new node joins the Network (via Bootstrap process)
+- Contacts a (dumb) proxy
+- Proxy sends new node to a Section
+- New node has to then generate keypair that falls within range of Section addresses
+- So if sent to Section 11010…, node’s address must also start with 11010...
+- Unlike Bitcoin where any random address is created
+- The public signing key it has created now acts as that node’s new location on the Network
+- New Section now checks new node is suitable (Resource Proof)
